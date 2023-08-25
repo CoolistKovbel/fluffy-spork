@@ -44,3 +44,58 @@
   text-decoration: underline;
 }
 
+/* 
+  Hero Component
+*/
+
+#Hero {
+  position: relative;
+  width: 100%;
+  height: 500px;
+}
+#Hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: url('./img/choong-deng-xiang--WXQm_NTK0U-unsplash.jpg') center/cover no-repeat;
+  filter: grayscale(77%);
+  z-index: -1;
+}
+
+.hero__content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  padding: 20px;
+  background: rgba(0, 0, 0, 0.5); /* Background effect */
+  color: white; /* Text color */
+}
+
+.hero__content h2 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.hero__content p {
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.hero__content a {
+  display: inline-block;
+  padding: 10px 20px;
+  background: var(--metallic-jade-green);
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.hero__content a:hover {
+  background: var(--metallic-emerald-green);
+}
+

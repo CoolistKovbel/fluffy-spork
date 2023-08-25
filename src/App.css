@@ -21,7 +21,7 @@
 
 #main__header {
   width: 100%;
-  height: 100px;
+  height: 80px;
   background-color: var(--metallic-indigo-purple);
 }
 
@@ -65,12 +65,18 @@
   z-index: -1;
 }
 
+/* 
+  Image
+  https://unsplash.com/photos/-WXQm_NTK0U?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink  
+*/
+
 .hero__content {
   position: absolute;
   bottom: 0;
   left: 0;
+  right: 0;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.5); /* Background effect */
+  background: rgba(0, 0, 0, 0.7); /* Background effect */
   color: white; /* Text color */
 }
 
@@ -99,3 +105,89 @@
   background: var(--metallic-emerald-green);
 }
 
+/* 
+  Services Component
+*/
+
+/* Services Component */
+
+#services {
+  background-color: var(--metallic-navy-blue);
+}
+
+#services .services__content {
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content: space-between;
+}
+
+#services .services__content .services__text {
+  flex: 1; 
+  max-width: 600px;
+}
+
+#services .services__content .services__text h2 {
+  font-size: 2.5em;
+  margin-bottom: 10px;
+}
+
+#services .services__content .services__text p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+#services .services__content .services__image__container {
+  flex: 1; 
+  max-width: 600px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+}
+
+#services .services__content .services__image__container img {
+  max-width: 100%;
+  height: auto; 
+  display: block; 
+}
+
+#services .services__features {
+  padding: 20px;
+  text-align: center;
+}
+
+#services .services__features h3 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+#services .services__features .features {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#services .services__features .features div {
+  flex: 1; 
+  max-width: 30%; 
+  height: 250px;
+  background-color: var(--metallic-midnight-black);
+  padding: 10px;
+  border-radius: 10px;
+}
+
+#services .services__features h4 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+#services .services__features i {
+  font-size: 2.5em;
+  margin-bottom: 5px;
+  color: var(--metallic-jade-green);
+}
+
+#services .services__features p {
+  font-size: 14px;
+  line-height: 1.4;
+}

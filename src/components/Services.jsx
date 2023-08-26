@@ -36,7 +36,7 @@ export default function Services() {
                         Contact us today to start your journey toward local search domination.
                     </p>
                 </div>
-                
+
                 <div className='services__image__container'>
                     <img src={Image} alt='https://www.freepik.com/free-vector/arrow-showing-increasing_894507.htm#query=upward%20graph&position=6&from_view=keyword&track=ais' />
                 </div>
@@ -45,17 +45,19 @@ export default function Services() {
 
             <div className='services__features'>
                 <h3>Eliminate frustration, Spend less time, Get more results</h3>
+
                 <div className='features'>
                     {
                         features.map((feature) => (
                             <div>
-                                <h4>{feature.title}</h4>
                                 <i>{feature.icon}</i>
+                                <h4>{feature.title}</h4>
                                 <p>{feature.description}</p>
                             </div>
                         ))
                     }
                 </div>
+                
             </div>
 
         </div>

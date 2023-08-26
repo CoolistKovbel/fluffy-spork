@@ -76,8 +76,8 @@
   left: 0;
   right: 0;
   padding: 20px;
-  background: rgba(0, 0, 0, 0.7); /* Background effect */
-  color: white; /* Text color */
+  background: rgba(0, 0, 0, 0.7); 
+  color: white; 
 }
 
 .hero__content h2 {
@@ -109,7 +109,6 @@
   Services Component
 */
 
-/* Services Component */
 
 #services {
   background-color: var(--metallic-navy-blue);
@@ -182,7 +181,7 @@
 }
 
 #services .services__features i {
-  font-size: 2.5em;
+  font-size: 3em;
   margin-bottom: 5px;
   color: var(--metallic-jade-green);
 }
@@ -190,4 +189,49 @@
 #services .services__features p {
   font-size: 14px;
   line-height: 1.4;
+}
+
+/* 
+
+  About Page
+
+*/
+
+#aboutUs {
+  height: auto;
+}
+
+#aboutUs header{
+  padding: 20px;
+  background-color: var( --metallic-deep-green);
+}
+
+
+#aboutUs .card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  max-width: 100%;
+
+  padding: 10px;
+}
+
+#aboutUs .card p{
+  flex: 1;
+  max-width: 100%;
+  padding: 10px;
+}
+
+#aboutUs .card .card-profile-image {
+  flex: 1;
+  max-width: 600px;
+  height: 200px;
+}
+
+#aboutUs .card .card-profile-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
 }

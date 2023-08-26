@@ -51,6 +51,6 @@ a {
   color: var(--metallic-emerald-green);
 }
 
-span, div, form, input {
+span, div, form, input, textarea {
   padding: 5px;
 }

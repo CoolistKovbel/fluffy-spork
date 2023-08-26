@@ -10,8 +10,8 @@ export default function ContactUs () {
             <div className='contact'>
 
                 <div className='contact__items'>
-                    <div className='contact__image__container'>
-                        <img src="https://avatars.githubusercontent.com/u/49249813?v=4" />
+                    <div className='image-container'>
+                        <img src="https://avatars.githubusercontent.com/u/49249813?v=4" className='image-block'/>
                     </div>
 
                     <form>
@@ -47,8 +47,7 @@ export default function ContactUs () {
                     </form>
                 </div>
 
-
-
+3
                 {/* Social */}
                 <div className='contact__social'>
 

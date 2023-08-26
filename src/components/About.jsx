@@ -23,8 +23,8 @@ export default function About () {
 
         <div className='card'>
 
-            <div className="card-profile-image">
-                <img src={member[0].profile} alt="unplash - kevin ku" />
+            <div className="image-container">
+                <img src={member[0].profile} alt="unplash - kevin ku" className='image-block' />
             </div>
 
             <p>
@@ -32,7 +32,7 @@ export default function About () {
             </p>
 
 
-        </div>
+            </div>
 
       </article>
     )

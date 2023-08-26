@@ -111,6 +111,7 @@
 
 
 #services {
+  height: auto;
   background-color: var(--metallic-navy-blue);
 }
 
@@ -198,7 +199,7 @@
 */
 
 #aboutUs {
-  height: 450px;
+  height: auto;
 }
 
 #aboutUs header{
@@ -224,17 +225,6 @@
   padding: 10px;
 }
 
-#aboutUs .card .card-profile-image {
-  flex: 1;
-  max-width: 600px;
-  height: 200px;
-}
-
-#aboutUs .card .card-profile-image img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-}
 
 /* 
 
@@ -255,6 +245,7 @@
 #contactUs .contact__items {
   display: flex;
   align-items: center;
+  justify-content: space-around;
   width: 100%;
 }
 
@@ -270,6 +261,8 @@
 }
 
 #contactUs .contact__items form {
+  border: 3px solid  var(--metallic-azure-blue);
+  padding: 10px;
   flex: 1;
   max-width: 600px;
   height: 100%;
@@ -278,6 +271,7 @@
   align-items: center;
   justify-content: center;
   gap: 10px;
+  background-color: var(--metallic-royal-purple);
 }
 
 #contactUs .contact__items form label {

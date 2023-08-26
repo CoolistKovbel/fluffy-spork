@@ -54,3 +54,21 @@ a {
 span, div, form, input, textarea {
   padding: 5px;
 }
+
+img {
+  display: block;
+}
+
+
+/* Classess */
+.image-container {
+  max-width: 500px;
+  height: auto;
+  display: block;
+}
+
+.image-block {
+  width: 100%;
+  height: auto;
+  display: block;
+}

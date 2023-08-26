@@ -1,7 +1,39 @@
-
+import { useState, userState } from 'react'
 import { AiFillLinkedin, AiFillInstagram, AiFillGithub, AiFillFileExcel } from 'react-icons/ai'
 
 export default function ContactUs () {
+
+    const [name, setName] = useState('')
+    const [email, setEmail] = useState('')
+    const [phone, setPhone] = useState('')
+    const [address,setAddress] = useState('')
+    const [message, setMessage] = useState('')
+
+    const SubmitHandler = (e) => {
+        e.preventDefault()
+
+        
+        const data = {
+            name: name,
+            email: email,
+            phone: phone,
+            address: address,
+            message: message,
+        }
+
+
+
+
+
+        setName('')
+        setEmail('')
+        setPhone('')
+        setAddress('')
+        setMessage('')
+    }
+
+
+
     return (
         <div id='contactUs'>
 
@@ -14,29 +46,52 @@ export default function ContactUs () {
                         <img src="https://avatars.githubusercontent.com/u/49249813?v=4" className='image-block'/>
                     </div>
 
-                    <form>
+                    <form onSubmit={SubmitHandler}>
 
                         <label>
                             Name:
-                            <input type="text" placeholder='name' />
+                            <input 
+                                type="text" 
+                                placeholder='name'
+                                value={name} 
+                                onChange={(e) => setName(e.target.value)}
+                            />
                         </label>
 
                         <label>
                             Email:
-                            <input type="email" placeholder='email' />
+                            <input 
+                                type="email"
+                                placeholder='email'
+                                value={email}
+                                onChange={(e) => setEmail(e.target.value)}
+                            />
                         </label>
 
                         <label>
                             phone:
-                            <input type='phone' placeholder='202-112-2223'/>
+                            <input 
+                                type='phone' 
+                                placeholder='202-112-2223'
+                                value={phone}
+                                onChange={(e) => setPhone(e.target.value)}
+                            />
                         </label>
 
                         <label>
                             address:
-                            <input type='address' placeholder='address' />
+                            <input 
+                                type='address' 
+                                placeholder='address'
+                                value={address}
+                                onChange={(e) => setAddress(e.target.value)}
+                            />
                         </label>
 
-                        <textarea placeholder='enter reason of contact'>
+                        <textarea 
+                            placeholder='enter reason of contact'
+                            onChange={(e) => setMessage(e.target.value)}
+                        >
 
                         </textarea>
 

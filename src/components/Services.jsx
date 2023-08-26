@@ -7,17 +7,20 @@ export default function Services() {
         {
             title: 'Google Business Profile Setup',
             icon: <FaUserCog />,
-            description: 'Our GMB Profile Setup Service is the best way to get started if you don’t already have a GBP listing and you don’t want to go through the pain of setting it up yourself.'
+            description: 'Our GMB Profile Setup Service is the best way to get started if you don’t already have a GBP listing and you don’t want to go through the pain of setting it up yourself.',
+            lnk: "https://buy.stripe.com/test_7sI01A5Ul6vCafmfZ1"
         },
         {
             title: 'Google Business Profile Management',
             icon: <FaUserShield />,
-            description: 'Our GMB Profile Management Service gives you a hands off solution for get higher rankings, greater visibility, and more business from your Google Business Profile.'
+            description: 'Our GMB Profile Management Service gives you a hands off solution for get higher rankings, greater visibility, and more business from your Google Business Profile.',
+            lnk: "https://buy.stripe.com/test_eVa5lUgyZ4nuevCaEG"
         },
         {
             title: 'Google Business Profile Optimization',
             icon: <FaHouseUser />,
-            description: 'Our GMB Profile Optimization Service is ideal if you already have a GBP listing, but you not 100% sure if you’re doing everything to get the best results out of your profile.'
+            description: 'Our GMB Profile Optimization Service is ideal if you already have a GBP listing, but you not 100% sure if you’re doing everything to get the best results out of your profile.',
+            lnk: "https://buy.stripe.com/test_cN25lU2I99HO87e9AB"
         }
     ]
 
@@ -53,6 +56,7 @@ export default function Services() {
                                 <i>{feature.icon}</i>
                                 <h4>{feature.title}</h4>
                                 <p>{feature.description}</p>
+                                <a href={feature.lnk} target="_blank" rel="noreferrer" >Service</a>
                             </div>
                         ))
                     }

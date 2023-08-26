@@ -47,7 +47,7 @@ export default function ContactUs () {
                     </form>
                 </div>
 
-3
+
                 {/* Social */}
                 <div className='contact__social'>
 

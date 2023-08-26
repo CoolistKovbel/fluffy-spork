@@ -49,7 +49,7 @@ export default function Services() {
                 <div className='features'>
                     {
                         features.map((feature) => (
-                            <div>
+                            <div className='flexy flexy-col'>
                                 <i>{feature.icon}</i>
                                 <h4>{feature.title}</h4>
                                 <p>{feature.description}</p>

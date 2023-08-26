@@ -72,3 +72,13 @@ img {
   height: auto;
   display: block;
 }
+
+.flexy {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flexy-col {
+  flex-direction: column;
+}
